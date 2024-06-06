@@ -1,0 +1,7 @@
+{
+  "name": "narutoo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
