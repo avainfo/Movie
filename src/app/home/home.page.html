@@ -26,7 +26,8 @@
       </ion-fab-list>
       <ion-fab-list side="start">
         <ion-fab-button>
-          <ion-icon name="heart"(click)="redirectTo('https://www.jeuxactu.com/jeu/images-naruto-shippuden-ultimate-ninja-storm-3-20549-5.htm')"></ion-icon>
+          <ion-icon name="heart"
+                    (click)="redirectTo('https://www.jeuxactu.com/jeu/images-naruto-shippuden-ultimate-ninja-storm-3-20549-5.htm')"></ion-icon>
         </ion-fab-button>
         <ion-fab-button>
           <ion-icon name="document"></ion-icon>
@@ -35,24 +36,20 @@
     </ion-fab>
 
   </ion-toolbar>
-
 </ion-header>
 
 <ion-content>
-
-
   <ion-card class="Title">
     <ion-card-header>
-      <div class="stak"><ion-icon name="star"></ion-icon>
+      <div class="stak">
+        <ion-icon name="star"></ion-icon>
         <ion-icon name="star"></ion-icon>
         <ion-icon name="star"></ion-icon>
         <ion-icon name="star"></ion-icon>
         <ion-icon name="star-half"></ion-icon>
         <ion-icon name="game-controller"></ion-icon>
       </div>
-      <ion-card-title>Naruto Shippūden: Ultimate Ninja Storm 3
-      </ion-card-title>
-
+      <ion-card-title>Naruto Shippūden: Ultimate Ninja Storm 3</ion-card-title>
     </ion-card-header>
 
     <ion-card-content>
@@ -63,9 +60,11 @@
       décisions ultimes qui offrent divers embranchements.
     </ion-card-content>
   </ion-card>
-  
-  <app-card imageUrl='https://www.reference-gaming.com/assets/media/product/77068/naruto-shippuden-ultimate-ninja-storm-3-full-burst-ps3-5da9c57a5a50b.jpg?format=product-cover-large&k=1571407226'></app-card> 
-  <ion-content >
-    <app-card [imageUrl]="'imageSource'" (newItemEvent)="onImageClicked($event)"></app-card>
-  </ion-content>
+
+  <app-card
+    imageUrl='https://www.reference-gaming.com/assets/media/product/77068/naruto-shippuden-ultimate-ninja-storm-3-full-burst-ps3-5da9c57a5a50b.jpg?format=product-cover-large&k=1571407226'
+  (newItemEvent)="onImageClicked($event)"/>
+<!--  <ion-content>-->
+<!--    <app-card [imageUrl]="'imageSource'" (newItemEvent)="onImageClicked($event)"></app-card>-->
+<!--  </ion-content>-->
 </ion-content>

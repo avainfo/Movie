@@ -1,8 +1,5 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { HomePage } from 'src/app/home/home.page';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
-import { from } from 'rxjs';
-import { UrlCreationOptions } from '@angular/router';
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
@@ -12,7 +9,8 @@ export class CardComponent implements OnInit {
   @Input() imageUrl: string = '';
   @Output() newItemEvent = new EventEmitter<string>();
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
     console.log()
@@ -20,7 +18,7 @@ export class CardComponent implements OnInit {
 
   onImageClick(): void {
     console.log("testestest");
-    
+
     this.newItemEvent.emit(this.imageUrl);
   }
 

@@ -16,8 +16,8 @@ export class HomePage {
   //backgroundUrl: string = '';
 
   onImageClicked(imageUrl: any) {
-    console.log("test");
-    
+    console.log(imageUrl);
+
     // this.backgroundUrl = imageUrl;
     //console.log("HomePage: ", imageUrl)
   }
