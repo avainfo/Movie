@@ -1,0 +1,15 @@
+.bot {
+    display: flex;
+    flex-direction: row;
+    height: 31vw;
+    margin-top: 55vw;
+    overflow-y: scroll;
+  }
+  
+  .bot ion-card {
+    flex: 0 0 40vw;
+  }
+  ion-content {
+    background-size: cover;
+    background-position: center;
+  }

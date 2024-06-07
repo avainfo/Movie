@@ -8,5 +8,17 @@ import { Component } from '@angular/core';
 export class HomePage {
 
   constructor() {}
+  // Méthode pour rediriger vers une URL
+  redirectTo(url: string): void {
+    window.location.href = url;
+  }
+  //imageSource: string = 'https://cultea.fr/wp-content/uploads/2023/11/1chapter2-chasing-sasuke-day-of-parting-2-1697754126752-1024x576.png';
+  //backgroundUrl: string = '';
 
+  onImageClicked(imageUrl: any) {
+    console.log("test");
+    
+    // this.backgroundUrl = imageUrl;
+    //console.log("HomePage: ", imageUrl)
+  }
 }

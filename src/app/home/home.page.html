@@ -1,20 +1,71 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title size="large" slot="start">Naruto</ion-title>
+    <ion-fab horizontal="center" vertical="center" slot="end">
+
+      <ion-fab-button>
+        <ion-icon name="document"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list side="top">
+        <ion-fab-button>
+          <ion-icon name="chevron-up"></ion-icon>
+        </ion-fab-button>
+      </ion-fab-list>
+      <ion-fab-list side="end">
+        <ion-fab-button>
+          <ion-icon name="color-palette"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button>
+          <ion-icon name="globe"></ion-icon>
+        </ion-fab-button>
+      </ion-fab-list>
+      <ion-fab-list side="bottom">
+        <ion-fab-button>
+          <ion-icon name="chevron-down"></ion-icon>
+        </ion-fab-button>
+      </ion-fab-list>
+      <ion-fab-list side="start">
+        <ion-fab-button>
+          <ion-icon name="heart"(click)="redirectTo('https://www.jeuxactu.com/jeu/images-naruto-shippuden-ultimate-ninja-storm-3-20549-5.htm')"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button>
+          <ion-icon name="document"></ion-icon>
+        </ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
+
   </ion-toolbar>
+
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+
+  <ion-card class="Title">
+    <ion-card-header>
+      <div class="stak"><ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star-half"></ion-icon>
+        <ion-icon name="game-controller"></ion-icon>
+      </div>
+      <ion-card-title>Naruto Shippūden: Ultimate Ninja Storm 3
+      </ion-card-title>
+
+    </ion-card-header>
+
+    <ion-card-content>
+      Naruto Shippuden : Ultimate Ninja Storm 3 est un jeu
+      de combat sur PS3. Reprenant les bases du gameplay de
+      la série, le jeu ajoute quelques nouveautés, comme les
+      actions cachées, les combats de hordes ou encore les
+      décisions ultimes qui offrent divers embranchements.
+    </ion-card-content>
+  </ion-card>
+  
+  <app-card imageUrl='https://www.reference-gaming.com/assets/media/product/77068/naruto-shippuden-ultimate-ninja-storm-3-full-burst-ps3-5da9c57a5a50b.jpg?format=product-cover-large&k=1571407226'></app-card> 
+  <ion-content >
+    <app-card [imageUrl]="'imageSource'" (newItemEvent)="onImageClicked($event)"></app-card>
+  </ion-content>
 </ion-content>

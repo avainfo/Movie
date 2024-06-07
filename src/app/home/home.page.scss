@@ -25,3 +25,33 @@
 #container a {
   text-decoration: none;
 }
+
+ion-toolbar.toolbar-title-large.ios.in-toolbar.hydrated {
+  color: #c47f00;
+}
+
+ion-fab-button {
+  margin-left: auto;
+  --background: #c47f00;
+  position : relative;
+  left: 80px;
+  
+}
+
+ion-content {
+  --background: none;
+  background: url('https://i.pinimg.com/736x/a0/13/2f/a0132f656542a09c826ac04a0b35bb93.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  --background: rgba(0, 0, 0, 0.60)
+}
+ion-card.Title {
+  margin-top: 25vh;
+  background: bottom;
+  color: orange;
+}
+ion-card-title{
+  color: orange;
+}
+
